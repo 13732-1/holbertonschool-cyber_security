@@ -1,2 +1,2 @@
 #!/bin/bash
-ps -u "$1" u | grep -vw "0"
+ps -U "$1" -u "$1" u | grep -v '0      0'
